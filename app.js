@@ -1,12 +1,6 @@
-let timer = document.getElementById("compteur");
+let seconde = 60;
 
-let totalSeconde = 60;
-
-setTimeout("totalSeconde", 1000);
-
-while (totalSeconde >= 0) {
-    console.log(totalSeconde);
-    timer.innerHTML = totalSeconde.toString();
-
-    totalSeconde--;
+while (seconde >= 0) {
+    document.getElementById('compteur').innerHTML+= (seconde-1) +"\n";
+    seconde--;
 }
